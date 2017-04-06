@@ -11,6 +11,9 @@ public class ExceptionalSunday {
 			for(int month=0;month<12;month++){
 				day = day + numberOfDaysInMonths[month];
 				if(day%7==0) System.out.println("1." + (month+2) + "." + year);
+				//We have two reason for calculate month+2 : 
+				// 1- We add numberOfDaysInMonths[month] for take next month (+1), 
+				// 2- Index starts with 0 (+1).
 			}
 		}	
 	}
